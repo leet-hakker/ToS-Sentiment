@@ -1,4 +1,5 @@
 import pickle
+import os
 import discord
 from discord.ext import commands
 from discord.ext.commands import bot
@@ -91,4 +92,4 @@ async def release_error(error, ctx):
         await ctx.channel.send('You do not have sufficient permissions.')
 
 
-client.run('TOKEN')
+client.run(os.getenv('TOKEN'))
