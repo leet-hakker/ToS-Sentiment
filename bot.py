@@ -15,7 +15,7 @@ def extract_features(word_list):
     return dict([(word, True) for word in word_list])
 
 
-classifier = pickle.load(open('trained_classifier.pickle', 'rb'))
+classifier = pickle.load(open('<YOUR_MODEL>', 'rb'))
 
 blacklist = [
     "Nigger", "Fagot", "Faggot", "Fagit", "Faggit", "Chink", "Spick", "Nigga",
